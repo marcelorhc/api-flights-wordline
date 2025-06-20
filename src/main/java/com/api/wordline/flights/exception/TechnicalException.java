@@ -1,0 +1,8 @@
+package com.api.wordline.flights.exception;
+
+public class TechnicalException extends RuntimeException {
+
+    public TechnicalException(String message) {
+        super(message);
+    }
+}
