@@ -41,7 +41,6 @@ public class GlobalExceptionHandler {
                 })
                 .collect(Collectors.toList());
 
-        String combinedErrorMessage = String.join(", ", errorMessages);
         ErrorResponse errorResponse = new ErrorResponse(errorMessages);
 
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
